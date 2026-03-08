@@ -59,21 +59,23 @@ function stableHash(str) {
 }
 
 const SCHOOL_COLORS = {
-  FAS:      "#60a5fa", // blue – the largest origin
-  GSD:      "#8b5cf6", // violet – design
-  HMS:      "#34d399", // emerald – medical
-  HSDM:     "#22d3ee", // cyan – dental
+  GSAS:     "#A9C8CA", // teal – grad arts & sciences
+  FAS:      "#D6D7CA", // sage – faculty of arts & sciences / DCE
+  HSDM:     "#C5D29C", // sage green – dental medicine
+  HSPH:     "#E9AB68", // amber – public health
+  HMS:      "#ED6B46", // terracotta – medical school
+  SEAS:     "#B6C8AF", // muted green – engineering & applied sciences
+  GSD:      "#C0C8E0", // periwinkle – design
+  HGSE:     "#869BB2", // steel blue – education
+  HKS:      "#ECAD9E", // blush – Kennedy school
+  HLS:      "#424548", // charcoal – law
+  HDS:      "#88605E", // mauve – divinity
+  HBS:      "#503936", // dark brown – business
+  HBSM:     "#503936", // dark brown – business MBA
+  HBSD:     "#503936", // dark brown – business doctoral
   MIT:      "#fb7185", // rose – external standout
-  HSPH:     "#fbbf24", // amber – public health
-  HGSE:     "#f472b6", // pink – education
-  HKS:      "#a78bfa", // purple – policy
-  HBS:      "#ef4444", // red – business
-  HBSM:     "#ef4444", // red – business MBA
-  HLS:      "#94a3b8", // slate – law
-  HDS:      "#d4d4d8", // neutral – divinity
   BROWN:    "#c2410c", // brown – Brown University
   FLETCHER: "#0ea5e9", // sky – Fletcher/Tufts
-  HBSD:     "#ef4444", // red – business doctoral
 };
 
 export function colorForSchool(code) {
