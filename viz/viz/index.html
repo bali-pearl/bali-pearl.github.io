@@ -97,8 +97,10 @@
           </div>
 
           <div class="panel__section">
-            <div class="panel__h2">Top Flows</div>
-            <div id="insights" class="insights"></div>
+            <details class="collapsible" open>
+              <summary class="panel__h2 collapsible__summary">Top Flows</summary>
+              <div id="insights" class="insights"></div>
+            </details>
           </div>
 
           <div class="panel__section">
@@ -144,6 +146,6 @@
     <script src="./vendor/papaparse.min.js"></script>
     <script src="./vendor/3d-force-graph.min.js"></script>
 
-    <script type="module" src="./main.js?v=3"></script>
+    <script type="module" src="./main.js?v=4"></script>
   </body>
 </html>

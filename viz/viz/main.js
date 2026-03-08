@@ -44,6 +44,7 @@ async function autoLoad() {
   for (const path of [
     "./harvard_cross_registration_data.csv",
     "../harvard_cross_registration_data.csv",
+    "../../harvard_cross_registration_data.csv",
   ]) {
     try {
       const res = await fetch(path);
