@@ -263,6 +263,30 @@ code {
 .tooltip__title { font-weight: 700; font-size: 13px; }
 .tooltip__sub { margin-top: 6px; font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.35; }
 
+/* ─── Collapsible sections ───────────────────────────────── */
+
+.collapsible { list-style: none; }
+.collapsible__summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  list-style: none;
+}
+.collapsible__summary::-webkit-details-marker { display: none; }
+.collapsible__summary::after {
+  content: "▾";
+  font-size: 10px;
+  opacity: 0.6;
+  transition: transform 200ms ease;
+}
+.collapsible[open] .collapsible__summary::after {
+  transform: rotate(-180deg);
+}
+.collapsible__summary:hover { color: rgba(255,255,255,0.85); }
+.collapsible > :not(summary) { margin-top: 10px; }
+
 /* ─── Insights – top flows ───────────────────────────────── */
 
 .insights { display: flex; flex-direction: column; gap: 6px; }
